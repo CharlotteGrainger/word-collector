@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Collector - The Author's Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="gameTitle">
+            <h1>Word Collector</h1>
+            <p>Help the author collect words for their book!</p>
+        </div>
+        
+        <div id="gameUI">
+            <div id="stats">
+                <span>Words Collected: <span id="wordCount">0</span>/20</span>
+                <span>Lives: <span id="lives">3</span></span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
+        <div id="controls">
+            <p>Use ARROW KEYS or WASD to move, SPACE to jump</p>
+        </div>
+        
+        <div id="gameOver" class="hidden">
+            <h2 id="gameOverText">Game Over!</h2>
+            <button id="restartBtn">Start New Story</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
